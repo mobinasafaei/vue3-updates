@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>{{ number }}</p>
-    <HomeView :title="title" @increamentEvent="number++"/>
+    <HomeView :title="title" @increamentEvent="increament"/>
   </div>
 </template>
 
@@ -23,6 +23,9 @@ function trackChange(x) {
   watch(x, () => {
     console.log("x changes");
   });
+}
+function increament(count){
+  number+=count;
 }
 console.log(count1, count2);
 </script>

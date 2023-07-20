@@ -1,12 +1,18 @@
 <template>
   <div>
     <h1>{{ props.title }}</h1>
-    <button @click="$emit('increamentEvent')">Increament</button>
+    <button @click="increamentEvent">Increament</button>
   </div>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { defineProps, defineEmits } from "vue";
 
-const props = defineProps(['title']);
+const emit = defineEmits(["increamentEvent"]);
+
+function increamentEvent() {
+  emit("increamentEvent", 3);
+}
+
+const props = defineProps(["title"]);
 </script>
