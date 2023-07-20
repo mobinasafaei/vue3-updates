@@ -1,7 +1,8 @@
 <template>
-  <div></div>
+  <div>{{ msg }}</div>
 </template>
 
 <script setup>
-console.log("start")
+console.log("start");
+const msg = "this is mobina";
 </script>
