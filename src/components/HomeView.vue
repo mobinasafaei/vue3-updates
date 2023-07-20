@@ -1,7 +1,11 @@
 <template>
-  <div><h1>Home Page</h1></div>
+  <div>
+    <h1>{{ props.title }}</h1>
+  </div>
 </template>
 
 <script setup>
+import { defineProps } from "vue";
 
+const props = defineProps(['title']);
 </script>
