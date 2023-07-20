@@ -1,19 +1,7 @@
 <template>
- <div>
-
- </div>
+  <div></div>
 </template>
 
-<script>
-
-
-export default {
-  name: 'App',
-  components: {
-  }
-}
+<script setup>
+console.log("start")
 </script>
-
-<style>
-
-</style>
