@@ -1,8 +1,7 @@
 <template>
   <div>
     <p>{{ number }}</p>
-    <button @click="number++"></button>
-    <HomeView :title="title" />
+    <HomeView :title="title" @increamentEvent="number++"/>
   </div>
 </template>
 
