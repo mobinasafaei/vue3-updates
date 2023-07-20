@@ -8,8 +8,11 @@ module.exports = defineConfig({
       .tap((options) => {
         return {
           ...options,
+          compilerOptions: {
+            isCustomElement: tag => tag.startsWith('ion-') // For Ionic Vue users, this line can be added.
+          },
           reactivityTransform: true
-        }
-      })
+        };
+      });
   }
 })

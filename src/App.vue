@@ -1,18 +1,16 @@
 <template>
   <div>
-    <!-- <h2>{{ msg }}</h2> -->
-    <h3 @click="increament()">{{ count }}</h3>
-    <!-- <HomeView /> -->
+
   </div>
 </template>
 
 <script setup>
+import { $ref } from "vue/macros";
 import { ref } from "vue";
 // import HomeView from "./components/HomeView.vue";
 
 // const msg = "this is mobina";
-const count = $ref(0)
-function increament() {
-  count++;
-}
+const count1 = ref(0);
+const count2 = $ref(0);
+console.log(count1, count2);
 </script>
